@@ -1,0 +1,2719 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: hsl(0, 0%, 100%);
+    --secondary-color: hsl(256, 100%, 5%);
+    --tertiary-color: hsl(240, 30%, 87%);
+    --fourth-color: hsl(256, 93%, 12%);
+    --fifth-color: rgb(5, 180, 255);
+}
+
+.dark_theme {
+    --primary-color: hsl(252, 30%, 17%);
+    --secondary-color: hsl(252, 30%, 95%);
+    --tertiary-color: hsl(240, 2%, 56%);
+    --fourth-color: #fff;
+    --fifth-color: rgb(252, 16, 86);
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background: var(--fourth-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 105px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-pic {
+    width: 170px;
+    height: 170px;
+    margin: -51px;
+}
+
+.logo-name {
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+}
+
+.search-text {
+    width: 490px;
+    height: 40px;
+    padding: 0px 44px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+    font-size: 13.7px;
+    outline: none;
+    border: none;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+}
+
+#search-icon {
+    margin-top: 13px;
+    margin-right: -30px;
+    z-index: 9999;
+    font-size: 14px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.pro {
+    display: flex;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    background: var(--secondary-color);
+    width: 152px;
+    border-radius: 40px;
+    border: none;
+    padding: 0px 6px;
+    margin-left: 6px;
+}
+
+.my {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.name-my {
+    font-size: 11.3px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 5px;
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    background: var(--secondary-color);
+    width: 120px;
+    border-radius: 40px;
+    border: none;
+    padding: 0px 6px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.mode-name {
+    font-size: 11.6px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 5px;
+}
+
+#dark-mode {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--fourth-color);
+    padding: 4px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 105px;
+    overflow: hidden;
+}
+
+/* main-Left bar  */
+
+.profile {
+    display: grid;
+    place-items: center;
+    width: 272px;
+    height: 440px;
+    background: var(--fourth-color);
+    border-radius: 20px;
+    border: none;
+    background-image: url(images/bg.jpg);
+    background-size: 100% 98px;
+    background-repeat: no-repeat;
+}
+
+.my-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 48px;
+}
+
+.my-name {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.my-username {
+    font-size: 15px;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    margin-top: -16px;
+}
+
+.bio {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 400;
+    text-align: center;
+    width: 211px;
+    margin-top: -5px;
+}
+
+.follow {
+    display: flex;
+}
+
+.following {
+    display: grid;
+    margin: 4px 30px;
+}
+
+.no {
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.word {
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 400;
+    text-align: center;
+}
+
+.line {
+    color: #c6c4c428;
+    width: 100%;
+}
+
+.line1 {
+    color: #c6c4c428;
+}
+
+/* Left bar  */
+
+.my-profile {
+    font-size: 15px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.post {
+    margin-top: 15px;
+}
+
+#create-post {
+    text-align: center;
+    width: 272px;
+    border-radius: 30px;
+    color: #fff;
+    background: var(--fifth-color);
+    font-size: 16.6px;
+    font-weight: 500;
+    border: none;
+    height: 55px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px var(--fifth-color);
+    letter-spacing: 0.6px;
+}
+
+
+/* main-right bar  */
+.trend {
+    width: 350px;
+    height: 579px;
+    background: var(--fourth-color);
+    border-radius: 20px;
+    border: none;
+    padding: 20px 35px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.happen {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box {
+    display: grid;
+    grid-gap: 3px;
+}
+
+.category {
+    font-size: 14px;
+    color: var(--tertiary-color);
+    font-family: 500;
+}
+
+.trend-name {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.trend-no {
+    font-size: 14px;
+    color: var(--tertiary-color);
+    font-family: 500;
+}
+
+.show {
+    font-size: 13.7px;
+    color: rgb(42, 42, 244);
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: -1px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dot-icon {
+    cursor: pointer;
+    color: var(--tertiary-color);
+    font-size: 18px;
+}
+
+.request {
+    margin-top: 23px;
+}
+
+.request-name {
+    font-size: 17.5px;
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+.parent-card {
+    display: grid;
+    grid-gap: 13px;
+    margin-top: 11px;
+}
+
+.card {
+    width: 350px;
+    height: 135px;
+    background: var(--fourth-color);
+    border-radius: 20px;
+    border: none;
+    display: grid;
+    padding: 15.5px 40px;
+}
+
+.about-people {
+    display: flex;
+}
+
+.people {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.people-name {
+    color: var(--primary-color);
+    font-size: 15.7px;
+    font-weight: 500;
+}
+
+#accept {
+    color: #fff;
+    background: var(--fifth-color);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#reject {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.connect-btn {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mutual {
+    display: grid;
+    margin-left: 17px;
+}
+
+.friend {
+    font-size: 14.7px;
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+/* main-center Left bar  */
+.story {
+    width: 570px;
+    height: 112px;
+    background: var(--fourth-color);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 7px 20px;
+}
+
+.story-pic {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: 3px solid var(--fifth-color);
+    cursor: pointer;
+}
+
+.story-person {
+    font-size: 11px;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: center;
+    margin: 5px;
+}
+
+.story1 {
+    margin: 5px 8px;
+}
+
+.story2 {
+    margin: 5px 8px;
+}
+
+.snaping {
+    width: 570px;
+    background: var(--fourth-color);
+    border-radius: 20px;
+    padding: 20px 23px;
+    margin-top: 20px;
+}
+
+.snaping1 {
+    width: 570px;
+    background: var(--fourth-color);
+    border-radius: 20px;
+    padding: 20px 23px;
+    margin-top: 20px;
+}
+
+.about-snap {
+    display: flex;
+}
+
+.person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nam {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-img {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 500
+}
+
+.blue {
+    width: 16.5px;
+    height: 17px;
+    margin: -3px 3px;
+}
+
+.user-name {
+    font-size: 12.5px;
+    color: var(--tertiary-color);
+    font-weight: 400;
+}
+
+.pos {
+    display: grid;
+    margin-left: 15px;
+}
+
+.time {
+    font-size: 12px;
+    color: var(--tertiary-color);
+    font-weight: 400;
+}
+
+#dot-icon1 {
+    cursor: pointer;
+    color: var(--tertiary-color);
+    font-size: 21px;
+    margin-left: 240px;
+}
+
+.text {
+    font-size: 16.4px;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+#text-img {
+    width: 450px;
+    height: 260px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.like-retweet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+
+.like {
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-color);
+    width: 113px;
+    height: 40px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.like1 {
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-color);
+    width: 113px;
+    height: 40px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+#icon {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#icon_like {
+    color: var(--fifth-color);
+    font-size: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#icon_snap {
+    color: hsl(23, 92%, 49%);
+    font-size: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.like-name {
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin: 5px;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--fourth-color);
+    z-index: 2;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px 25px;
+
+}
+
+.flex {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.input {
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+#cancel_btn {
+    font-size: 22px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.story-pic1 {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#write {
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    resize: none;
+    background: var(--fourth-color);
+    color: var(--primary-color);
+}
+
+.post-snap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-image {
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    background: rgb(52, 46, 48);
+    color: var(--fourth-color);
+    font-weight: 500;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-input {
+    display: inline-block;
+    padding: 8px 8px;
+    background-color: var(--fifth-color);
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.custom-file-input:hover {
+    background-color: #444;
+}
+
+#post {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background: var(--fifth-color);
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+#img-icon {
+    margin: 6px;
+}
+
+.post-snap {
+    margin-top: 20px;
+}
+
+.line2 {
+    color: #c6c4c428;
+}
+
+.img_show {
+    width: 450px;
+    height: 260px;
+    display: none;
+}
+
+.footer {
+    height: 210px;
+    width: 100%;
+    background: var(--fourth-color);
+    padding: 0px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo1 {
+    display: flex;
+}
+
+.made {
+    font-size: 21px;
+    color: var(--primary-color);
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.made1 {
+    font-size: 23px;
+    color: var(--fifth-color);
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+#icons {
+    font-size: 25px;
+    color: var(--primary-color);
+    padding: 7px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.options {
+    cursor: pointer;
+    background-color: #ddd;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.delete-btn {
+    background: var(--fourth-color);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    width: 78px;
+    height: 28px;
+    text-align: center;
+    margin-left: 179px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.clas {
+    display: grid;
+}
+
+
+@media screen and (max-width:1426px) {
+    .main {
+        padding: 90px 50px;
+    }
+
+    nav {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width:1327px) {
+    .main {
+        padding: 90px 30px;
+    }
+
+    nav {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width:1283px) {
+    .main {
+        padding: 90px 20px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .story {
+        width: 526px;
+        height: 112px;
+    }
+
+    .snaping {
+        width: 526px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 410px;
+        height: 257px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 334px;
+        height: 579px;
+    }
+
+    .card {
+        width: 334px;
+    }
+}
+
+
+@media screen and (max-width:1188px) {
+    .main {
+        padding: 90px 18px;
+    }
+
+    nav {
+        padding: 10px 18px;
+    }
+
+    .story {
+        width: 500px;
+        height: 112px;
+        padding: 7px 5px;
+    }
+
+    .snaping {
+        width: 500px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 373px;
+        height: 257px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 312px;
+        height: 579px;
+    }
+
+    .card {
+        width: 312px;
+    }
+
+    .profile {
+        width: 258px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width:1134px) {
+    .main {
+        padding: 90px 10px;
+    }
+
+    nav {
+        padding: 10px 10px;
+    }
+
+    .story {
+        width: 490px;
+        height: 112px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 490px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 364px;
+        height: 257px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 303px;
+        height: 579px;
+    }
+
+    .card {
+        width: 303px;
+    }
+
+    .profile {
+        width: 258px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width:1086px) {
+    .main {
+        padding: 90px 20px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .story {
+        width: 466px;
+        height: 112px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 466px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 346px;
+        height: 247px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 285px;
+        height: 579px;
+    }
+
+    .card {
+        width: 285px;
+    }
+
+    .profile {
+        width: 182px;
+        height: 240px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 1px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 182px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: 79px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 95px;
+    }
+
+    #reject {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width:987px) {
+    .main {
+        padding: 90px 20px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .story {
+        width: 430px;
+        height: 112px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 430px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 320px;
+        height: 244px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        width: 182px;
+        height: 240px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 1px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 182px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: 79px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 370px;
+    }
+
+    .text {
+        font-size: 14.5px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:918px) {
+    .main {
+        padding: 90px 20px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .story {
+        width: 470px;
+        height: 112px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 470px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 340px;
+        height: 244px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        width: 182px;
+        height: 240px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 18px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 182px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: 79px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 250px;
+    }
+
+    .text {
+        font-size: 14.5px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .main {
+        padding: 90px 25px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .story {
+        width: 450px;
+        height: 112px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 450px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 330px;
+        height: 244px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        width: 182px;
+        height: 240px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 18px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 182px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: 79px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 210px;
+    }
+
+    .text {
+        font-size: 14.5px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:669px) {
+    .main {
+        padding: 90px 25px;
+    }
+
+    nav {
+        padding: 10px 25px;
+    }
+
+    .story {
+        width: 375px;
+        height: 112px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 375px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 260px;
+        height: 181px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 228px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 18px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 150px;
+        height: 42px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: 22px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 160px;
+    }
+
+    .text {
+        font-size: 14.5px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .name-my {
+        display: none;
+    }
+
+    .about-me {
+        background: transparent;
+    }
+
+    .my {
+        margin-left: 105px;
+    }
+
+    .search-input {
+        margin-left: 83px;
+    }
+
+    .my-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .my-name {
+        font-size: 15px;
+    }
+
+    .name-img {
+        font-size: 13px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    .person-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .time {
+        font-size: 10px;
+        margin-top: -14px;
+    }
+
+    .pos {
+        display: grid;
+        margin-left: 7px;
+    }
+
+    .like-name {
+        display: none;
+    }
+
+    .like {
+        width: 50px;
+    }
+
+    .like1 {
+        width: 50px;
+    }
+
+    .story2 {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .logo-name {
+        font-size: 25px;
+    }
+
+    .made {
+        font-size: 17px;
+    }
+
+    .made1 {
+        font-size: 19px;
+    }
+
+    #icons {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 0px 20px;
+    }
+
+    .popup .content {
+        width: 430px;
+    }
+
+    #write {
+        font-size: 18px;
+        width: 273px;
+    }
+
+    .img_show {
+        width: 367px;
+        height: 251px;
+        display: none;
+    }
+}
+
+@media screen and (max-width:553px) {
+    .main {
+        padding: 90px 25px;
+    }
+
+    nav {
+        padding: 10px 25px;
+    }
+
+    .story {
+        width: 330px;
+        height: 110px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 330px;
+        padding: 20px 23px;
+        margin-top: 20px;
+    }
+
+    #text-img {
+        width: 228px;
+        height: 181px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        width: 122px;
+        height: 229px;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 18px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 122px;
+        height: 42px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: -14px;
+    }
+
+    .snaping {
+        width: 330px;
+        padding: 20px 13px;
+        margin-top: 20px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 160px;
+    }
+
+    .user-name {
+        font-size: 10.5px;
+        color: var(--tertiary-color);
+        font-weight: 400;
+    }
+
+    .text {
+        font-size: 12.5px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .name-my {
+        display: none;
+    }
+
+    .about-me {
+        background: transparent;
+    }
+
+    .my {
+        margin-left: 105px;
+    }
+
+    .search-input {
+        margin-left: 83px;
+    }
+
+    .my-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .my-name {
+        font-size: 12.3px;
+    }
+
+    .name-img {
+        font-size: 13px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    .person-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .time {
+        font-size: 10px;
+        margin-top: -14px;
+    }
+
+    .pos {
+        display: grid;
+        margin-left: 7px;
+    }
+
+    .like-name {
+        display: none;
+    }
+
+    .like {
+        width: 50px;
+    }
+
+    .like1 {
+        width: 50px;
+    }
+
+    .story2 {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .logo-name {
+        font-size: 25px;
+    }
+
+    .my-username {
+        font-size: 12px;
+    }
+
+    .made {
+        font-size: 17px;
+    }
+
+    .made1 {
+        font-size: 19px;
+    }
+
+    #icons {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 0px 20px;
+    }
+
+    .popup .content {
+        width: 410px;
+    }
+
+    #write {
+        font-size: 18px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .main {
+        padding: 90px 25px;
+    }
+
+    nav {
+        padding: 10px 25px;
+    }
+
+    .story {
+        width: 323px;
+        height: 110px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 323px;
+        padding: 20px 13px;
+        margin-top: 20px;
+    }
+
+    .story-person {
+        font-size: 10px;
+    }
+
+    .pro {
+        display: flex;
+        margin-left: -74px;
+    }
+
+    .mode {
+        width: 98px;
+    }
+
+    .mode-name {
+        font-size: 8.8px;
+    }
+
+    #text-img {
+        width: 218px;
+        height: 181px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 2px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: fixed;
+        margin: 296px 4px;
+        font-size: 15px;
+    }
+
+    .story-pic {
+        width: 56px;
+        height: 56px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: -38px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 160px;
+    }
+
+    .user-name {
+        font-size: 10.5px;
+        color: var(--tertiary-color);
+        font-weight: 400;
+    }
+
+    .text {
+        font-size: 12.5px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    .like1 {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .name-my {
+        display: none;
+    }
+
+    .about-me {
+        background: transparent;
+    }
+
+    .my {
+        margin-left: 105px;
+    }
+
+    .search-input {
+        margin-left: 83px;
+    }
+
+    .my-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .my-name {
+        font-size: 12.3px;
+    }
+
+    .name-img {
+        font-size: 13px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    .person-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .time {
+        font-size: 10px;
+        margin-top: -14px;
+    }
+
+    .pos {
+        display: grid;
+        margin-left: 7px;
+    }
+
+    .like-name {
+        display: none;
+    }
+
+    .like {
+        width: 50px;
+    }
+
+    .like1 {
+        width: 50px;
+    }
+
+    .story2 {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .logo-name {
+        font-size: 25px;
+    }
+
+    .my-username {
+        font-size: 12px;
+    }
+
+    .made {
+        font-size: 12px;
+    }
+
+    .made1 {
+        font-size: 13px;
+    }
+
+    #icons {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .footer {
+        height: 169px;
+        padding: 0px 20px;
+    }
+
+    .popup .content {
+        width: 325px;
+    }
+
+    #write {
+        font-size: 18px;
+        width: 190px;
+    }
+
+    .story-pic1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .img_show {
+        width: 271px;
+        height: 187px;
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:330px) {
+    .main {
+        padding: 90px 25px;
+    }
+
+    nav {
+        padding: 10px 7px;
+    }
+
+    .story {
+        width: 292px;
+        height: 100px;
+        padding: 7px 0px;
+    }
+
+    .snaping {
+        width: 292px;
+        padding: 20px 13px;
+        margin-top: 20px;
+    }
+
+    .story-person {
+        font-size: 10px;
+    }
+
+    .pro {
+        display: flex;
+        margin-left: -74px;
+    }
+
+    .mode {
+        width: 98px;
+    }
+
+    .mode-name {
+        font-size: 8.8px;
+    }
+
+    #text-img {
+        width: 218px;
+        height: 181px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .trend {
+        width: 245px;
+        height: 579px;
+    }
+
+    .card {
+        width: 245px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .line {
+        color: #c6c4c428;
+        width: 98%;
+    }
+
+    .main_center {
+        margin-left: 2px;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .my-profile {
+        display: none;
+    }
+
+    #create-post {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: fixed;
+        margin: 296px 4px;
+        font-size: 15px;
+    }
+
+    .story-pic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .blue {
+        margin: none;
+    }
+
+    #dot-icon1 {
+        font-size: 21px;
+        margin-left: 240px;
+        position: relative;
+        top: -19px;
+        left: -38px;
+    }
+
+    .nam {
+        display: grid;
+    }
+
+    #accept {
+        width: 85px;
+        height: 31px;
+    }
+
+    #reject {
+        width: 85px;
+        height: 31px;
+    }
+
+    .search-text {
+        width: 160px;
+    }
+
+    .user-name {
+        font-size: 10.5px;
+        color: var(--tertiary-color);
+        font-weight: 400;
+    }
+
+    .text {
+        font-size: 11.5px;
+        width: 225px;
+    }
+
+    .like {
+        width: 98px;
+        height: 40px;
+    }
+
+    .like1 {
+        width: 98px;
+        height: 40px;
+    }
+
+    #icon_like {
+        font-size: 19px;
+    }
+
+    #icon_snap {
+        font-size: 19px;
+    }
+
+    #icon {
+        font-size: 19px;
+    }
+
+    .friend {
+        font-size: 11.7px;
+    }
+
+    .people-name {
+        font-size: 12.5px;
+    }
+
+    .happen {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .trend-name {
+        font-size: 12px;
+    }
+
+    .trend-no {
+        font-size: 11px;
+    }
+
+    #dot-icon {
+        font-size: 11px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .name-my {
+        display: none;
+    }
+
+    .about-me {
+        background: transparent;
+    }
+
+    .my {
+        margin-left: 105px;
+    }
+
+    .search-input {
+        margin-left: 83px;
+    }
+
+    .my-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .my-name {
+        font-size: 12.3px;
+    }
+
+    .name-img {
+        font-size: 11px;
+    }
+
+    .person-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .time {
+        font-size: 10px;
+        margin-top: -14px;
+    }
+
+    .pos {
+        display: grid;
+        margin-left: 7px;
+    }
+
+    .like-name {
+        display: none;
+    }
+
+    .like {
+        width: 50px;
+    }
+
+    .like1 {
+        width: 50px;
+        position: relative;
+        left: -35px;
+    }
+
+    .story2 {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .logo-name {
+        font-size: 25px;
+    }
+
+    .my-username {
+        font-size: 12px;
+    }
+
+    .made {
+        font-size: 12px;
+    }
+
+    .made1 {
+        font-size: 13px;
+    }
+
+    #icons {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    .footer {
+        height: 169px;
+        padding: 0px 20px;
+    }
+
+    .popup .content {
+        width: 285px;
+    }
+
+    #write {
+        font-size: 17px;
+        width: 184px;
+    }
+
+    .story-pic1 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #post {
+        width: 72px;
+        height: 37px;
+        font-size: 16px;
+    }
+
+    .custom-file-input {
+        display: inline-block;
+        padding: 6px 0px;
+        font-size: 10px;
+        width: 82px;
+    }
+
+    .img_show {
+        width: 244px;
+        height: 187px;
+        display: none;
+    }
+}

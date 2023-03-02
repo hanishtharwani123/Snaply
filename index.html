@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaply - Express yourself with Snaply.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img src="images/logo.png" class="logo-pic"> -->
+            <span class="logo-name">Snaply</span>
+        </div>
+        <div class="search-input">
+            <i class="fa fa-magnifying-glass" id="search-icon"></i>
+            <input type="text" class="search-text" placeholder="Search Snaply">
+        </div>
+
+        <div class="pro">
+            <div class="about-me">
+                <img src="images/my-pic.jpg" class="my">
+                <span class="name-my">Hanish Tharwani</span>
+            </div>
+            <div class="mode">
+                <span class="mode-name">Light mode</span>
+                <img src="images/sun.png" id="dark-mode">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main-left">
+            <div class="profile">
+                <img src="images/my-pic.jpg" class="my-img">
+                <span class="my-name">Hanish Tharwani</span>
+                <span class="my-username">@Hanish$</span>
+                <span class="bio">Web Developer || Experience with Machine Learning, C/C++.</span>
+                <hr class="line">
+                <div class="follow">
+                    <div class="following">
+                        <span class="no">1000</span>
+                        <span class="word">Following</span>
+                    </div>
+                    <hr class="line1">
+                    <div class="following">
+                        <span class="no">3000</span>
+                        <span class="word">Followers</span>
+                    </div>
+                </div>
+                <hr class="line">
+                <span class="my-profile">My Profile</span>
+            </div>
+            <div class="post">
+                <button id="create-post">Create Post</button>
+            </div>
+        </div>
+        <div class="main_center">
+            <div class="story">
+                <div class="story1">
+                    <img src="images/my-pic.jpg" class="story-pic">
+                    <span class="story-person">Your story</span>
+                </div>
+                <div class="story1">
+                    <img src="images/pic2.jpg" class="story-pic">
+                    <span class="story-person">kevin</span>
+                </div>
+                <div class="story1">
+                    <img src="images/messi.jpeg" class="story-pic">
+                    <span class="story-person">Messi</span>
+                </div>
+                <div class="story1">
+                    <img src="images/ronaldo.jpg" class="story-pic">
+                    <span class="story-person">Ronaldo</span>
+                </div>
+                <div class="story2">
+                    <img src="images/srk.jpg" class="story-pic">
+                    <span class="story-person">Sharukh</span>
+                </div>
+                <div class="story2">
+                    <img src="images/salman.jpeg" class="story-pic">
+                    <span class="story-person">Salman</span>
+                </div>
+            </div>
+
+            <div class="snaping">
+                <div class="about-snap">
+                    <img src="images/elon.jpg" class="person-img">
+                    <div class="pos">
+                        <div class="nam">
+                            <div class="tick">
+                                <span class="name-img">Elon Musk</span>
+                                <img src="images/blue_tick.png" class="blue">
+                                <span class="user-name">@elonmusk</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis" id="dot-icon1"></i>
+                        </div>
+                        <span class="time">2 hours ago</span>
+                        <span class="text">
+                            Tesla stock price is too high imo
+                        </span>
+                        <img src="images/elon1.webp" id="text-img">
+
+                        <div class="like-retweet">
+                            <div class="like">
+                                <i class="far fa-regular fa-heart" id="icon_like"></i>
+                                <span class="like-name">Like</span>
+                            </div>
+                            <div class="like">
+                                <i class="far fa-regular fa-lightbulb" id="icon_snap"></i>
+                                <span class="like-name">Resnap</span>
+                            </div>
+                            <div class="like1">
+                                <i class="fa-solid fa-comment-dots" id="icon"></i>
+                                <span class="like-name">Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="snaping">
+                <div class="about-snap">
+                    <img src="images/modi.jpg" class="person-img">
+                    <div class="pos">
+                        <div class="nam">
+                            <div class="tick">
+                                <span class="name-img">Narendra Modi</span>
+                                <img src="images/blue_tick.png" class="blue">
+                                <span class="user-name">@narendramodi</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis" id="dot-icon1"></i>
+                        </div>
+                        <span class="time">1 hours ago</span>
+                        <span class="text">
+                            Held productive talks with Chancellor
+                            @OlafScholz
+                            . Our talks focussed on ways to boost India-Germany cooperation and further augment trade
+                            ties. We also agreed to deepen ties in renewable energy, green hydrogen and biofuels.
+                            Security cooperation was also discussed.
+                            @Bundeskanzler
+
+                        </span>
+                        <!-- <img src="images/tesla.jpg" id="text-img"> -->
+
+                        <div class="like-retweet">
+                            <div class="like">
+                                <i class="fa-regular fa-heart" id="icon_like"></i>
+                                <span class="like-name">Like</span>
+                            </div>
+                            <div class="like">
+                                <i class="fa-regular fa-lightbulb" id="icon_snap"></i>
+                                <span class="like-name">Resnap</span>
+                            </div>
+                            <div class="like1">
+                                <i class="fa-solid fa-comment-dots" id="icon"></i>
+                                <span class="like-name">Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="snaping">
+                <div class="about-snap">
+                    <img src="images/cr7.jpg" class="person-img">
+                    <div class="pos">
+                        <div class="nam">
+                            <div class="tick">
+                                <span class="name-img">Cristiano Ronaldo</span>
+                                <img src="images/blue_tick.png" class="blue">
+                                <span class="user-name">@Cristiano</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis" id="dot-icon1"></i>
+                        </div>
+                        <span class="time">10 hours ago</span>
+                        <span class="text">
+                            Great feeling to have scored 4 goals and reaching my 500th league goal in a very solid win
+                            by the team!💪🏼
+                        </span>
+                        <img src="images/cr.jpeg" id="text-img">
+
+                        <div class="like-retweet">
+                            <div class="like">
+                                <i class="fa-regular fa-heart" id="icon_like"></i>
+                                <span class="like-name">Like</span>
+                            </div>
+                            <div class="like">
+                                <i class="fa-regular fa-lightbulb" id="icon_snap"></i>
+                                <span class="like-name">Resnap</span>
+                            </div>
+                            <div class="like1">
+                                <i class="fa-solid fa-comment-dots" id="icon"></i>
+                                <span class="like-name">Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="snaping">
+                <div class="about-snap">
+                    <img src="images/andrew.jpg" class="person-img">
+                    <div class="pos">
+                        <div class="nam">
+                            <div class="tick">
+                                <span class="name-img">Andrew Tate</span>
+                                <img src="images/blue_tick.png" class="blue">
+                                <span class="user-name">@Cobratate</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis" id="dot-icon1"></i>
+                        </div>
+                        <span class="time">1 minute ago</span>
+                        <span class="text">
+                            The primary objective of the largely promoted “entertainment” is to inject poison into the
+                            minds of the population.
+
+                            Why else would such garbage even exist?
+
+                            Pay attention and you’ll notice it's not funny. It doesn’t even entertain.
+
+                            You’ve been programmed to consume regardless.
+                        </span>
+                        <!-- <img src="images/tesla.jpg" id="text-img"> -->
+
+                        <div class="like-retweet">
+                            <div class="like">
+                                <i class="fa-regular fa-heart" id="icon_like"></i>
+                                <span class="like-name">Like</span>
+                            </div>
+                            <div class="like">
+                                <i class="fa-regular fa-lightbulb" id="icon_snap"></i>
+                                <span class="like-name">Resnap</span>
+                            </div>
+                            <div class="like1">
+                                <i class="fa-solid fa-comment-dots" id="icon"></i>
+                                <span class="like-name">Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="snaping">
+                <div class="about-snap">
+                    <img src="images/ksi.jpg" class="person-img">
+                    <div class="pos">
+                        <div class="nam">
+                            <div class="tick">
+                                <span class="name-img">ksi</span>
+                                <img src="images/blue_tick.png" class="blue">
+                                <span class="user-name">@KSI</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis" id="dot-icon1"></i>
+                        </div>
+                        <span class="time">2 second ago</span>
+                        <span class="text">
+                            Prime x UFC
+                        </span>
+                        <img src="images/box.jpeg" id="text-img">
+
+                        <div class="like-retweet">
+                            <div class="like">
+                                <i class="fa-regular fa-heart" id="icon_like"></i>
+                                <span class="like-name">Like</span>
+                            </div>
+                            <div class="like">
+                                <i class="fa-regular fa-lightbulb" id="icon_snap"></i>
+                                <span class="like-name">Resnap</span>
+                            </div>
+                            <div class="like1">
+                                <i class="fa-solid fa-comment-dots" id="icon"></i>
+                                <span class="like-name">Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="trend">
+                <span class="happen">What's happening</span>
+                <div class="box">
+                    <div class="menu">
+                        <span class="category">Enterainment - Trending </span>
+                        <i class="fa-solid fa-ellipsis" id="dot-icon"></i>
+                    </div>
+                    <span class="trend-name">Boycott Bollywood</span>
+                    <span class="trend-no">100K Snaps</span>
+                </div>
+                <div class="box">
+                    <div class="menu">
+                        <span class="category">Politics - Trending </span>
+                        <i class="fa-solid fa-ellipsis" id="dot-icon"></i>
+                    </div>
+                    <span class="trend-name">Narendar modi</span>
+                    <span class="trend-no">300K Snaps</span>
+                </div>
+                <div class="box">
+                    <div class="menu">
+                        <span class="category">Technology - Trending </span>
+                        <i class="fa-solid fa-ellipsis" id="dot-icon"></i>
+                    </div>
+                    <span class="trend-name">Web development</span>
+                    <span class="trend-no">1,654 Snaps</span>
+                </div>
+                <div class="box">
+                    <div class="menu">
+                        <span class="category">Football - Trending </span>
+                        <i class="fa-solid fa-ellipsis" id="dot-icon"></i>
+                    </div>
+                    <span class="trend-name">Messi vs Ronaldo</span>
+                    <span class="trend-no">10,000 Snaps</span>
+                </div>
+                <div class="box">
+                    <div class="menu">
+                        <span class="category">Cricket - Trending </span>
+                        <i class="fa-solid fa-ellipsis" id="dot-icon"></i>
+                    </div>
+                    <span class="trend-name">Virat kohli</span>
+                    <span class="trend-no">300k Snaps</span>
+                </div>
+                <span class="show">Show more</span>
+            </div>
+
+            <div class="request">
+                <span class="request-name">Requests</span>
+                <div class="parent-card">
+                    <div class="card">
+                        <div class="about-people">
+                            <img src="images/pic1.jpg" class="people">
+                            <div class="mutual">
+                                <span class="people-name">Amelia watson</span>
+                                <span class="friend">20 mutual friends</span>
+                            </div>
+
+                        </div>
+                        <div class="connect-btn">
+                            <button id="accept">Accept</button>
+                            <button id="reject">Reject</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="about-people">
+                            <img src="images/pic2.jpg" class="people">
+                            <div class="mutual">
+                                <span class="people-name">Sandy verma</span>
+                                <span class="friend">10 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="connect-btn">
+                            <button id="accept">Accept</button>
+                            <button id="reject">Reject</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="about-people">
+                            <img src="images/pic3.jpg" class="people">
+                            <div class="mutual">
+                                <span class="people-name">Aakash singh</span>
+                                <span class="friend">18 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="connect-btn">
+                            <button id="accept">Accept</button>
+                            <button id="reject">Reject</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="about-people">
+                            <img src="images/cr7.jpg" class="people">
+                            <div class="mutual">
+                                <span class="people-name">Ronaldo</span>
+                                <span class="friend">38 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="connect-btn">
+                            <button id="accept">Accept</button>
+                            <button id="reject">Reject</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="about-people">
+                            <img src="images/messi.jpeg" class="people">
+                            <div class="mutual">
+                                <span class="people-name">Lionel messi</span>
+                                <span class="friend">19 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="connect-btn">
+                            <button id="accept">Accept</button>
+                            <button id="reject">Reject</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot">
+            <div class="logo1">
+                <span class="logo-name">Snaply</span>
+            </div>
+            <h1 class="made">Made with ❤️ by,</h1>
+            <h1 class="made1">Hanish Tharwani</h1>
+        </div>
+        <div class="social">
+            <a href="https://github.com/hanishtharwani123" class="link"><i class="fa-brands fa-github"
+                    id="icons"></i></a>
+            <a href="https://twitter.com/TharwaniHanish" class="link"><i class="fa-brands fa-twitter"
+                    id="icons"></i></a>
+            <a href="https://www.linkedin.com/in/hanish-tharwani/" class="link"><i class="fa-brands fa-linkedin-in"
+                    id="icons"></i></i></a>
+        </div>
+    </div>
+
+    <script>
+        let mode_name = document.querySelector('.mode-name')
+        let icon = document.getElementById("dark-mode");
+        let mode = document.querySelector('.mode')
+        mode.addEventListener('click', () => {
+            let white = document.body.classList.toggle('dark_theme');
+            if (document.body.classList.contains('dark_theme')) {
+                mode_name.innerHTML = `Dark mode`;
+                icon.src = 'images/moon.png';
+            } else {
+                icon.src = 'images/sun.png';
+                mode_name.innerHTML = `Light mode`;
+            }
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
