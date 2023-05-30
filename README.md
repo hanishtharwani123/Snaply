@@ -1,5 +1,4 @@
-#SNAPLY
-hello everyone, so guys i have created a new project called snaply which is a social media platform where you can post anything text or image. This project is fully responsive and I have created it using HTML, CSS and JavaScript. I hope you like it ❤️.
+Hello everyone, so guys i have created a new project called snaply which is a social media platform where you can post anything text or image. This project is fully responsive and I have created it using HTML, CSS and JavaScript. I hope you like it ❤️.
 
 
 
