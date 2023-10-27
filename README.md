@@ -1,4 +1,4 @@
-# Snaply
+# Snapl
 
 Welcome to the repository of Snaply, a social media website similar to Twitter! Snaply allows users to post text and images, and it is built using HTML, CSS, and JavaScript. The website is designed to be fully responsive, ensuring a seamless experience across different devices.
 
