@@ -5,7 +5,8 @@ const cancel = document.getElementById("cancel_btn");
 create_post.addEventListener("click", () => {
   let popup_box = document.createElement("div");
   popup_box.classList.add("popup");
-  let HTMLdata = `<div class="overlay">
+  let HTMLdata = `
+  <div class="overlay">
   <div class="content">
       <i class="fas fa-regular fa-xmark" id="cancel_btn"></i>
       <div class="flex">
